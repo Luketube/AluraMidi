@@ -15,7 +15,8 @@ for(i = 0; i < listaDeTeclas.length; i++){
     }
 
     tecla.onkeydown = function (evento){
-        if(evento.code === 'Space' || evento.code === 'Enter')
+        console.log(evento.code);
+        if(evento.code === 'Space' || evento.code === 'Enter' || evento.code === 'NumpadEnter')
         tecla.classList.add('ativa');
     }
     tecla.onkeyup = function () {
